@@ -1,0 +1,7 @@
+message;severity;node;stamp;location
+"Starting turtlesim with node name /turtle3";"20";"turtle3";"1725952668.199694057";"./src/turtle_frame.cpp:TurtleFrame:112"
+"Starting turtlesim with node name /turtle2";"20";"turtle2";"1725952668.199741194";"./src/turtle_frame.cpp:TurtleFrame:112"
+"Starting turtlesim with node name /turtle1";"20";"turtle1";"1725952668.195997376";"./src/turtle_frame.cpp:TurtleFrame:112"
+"Spawning turtle [turtle1] at x=[5,544445], y=[5,544445], theta=[0,000000]";"20";"turtle1";"1725952668.209351915";"./src/turtle_frame.cpp:spawnTurtle:209"
+"Spawning turtle [turtle1] at x=[5,544445], y=[5,544445], theta=[0,000000]";"20";"turtle2";"1725952668.211503164";"./src/turtle_frame.cpp:spawnTurtle:209"
+"Spawning turtle [turtle1] at x=[5,544445], y=[5,544445], theta=[0,000000]";"20";"turtle3";"1725952668.211503224";"./src/turtle_frame.cpp:spawnTurtle:209"

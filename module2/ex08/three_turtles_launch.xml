@@ -1,0 +1,41 @@
+<launch>
+    <node
+        pkg="turtlesim"
+        exec="turtlesim_node"
+        name="turtle1"
+        output="screen">
+    </node>
+
+    <node
+        pkg="turtlesim"
+        exec="turtlesim_node"
+        name="turtle2"
+        output="screen">
+    </node>
+
+    <node
+        pkg="turtlesim"
+        exec="turtlesim_node"
+        name="turtle3"
+        output="screen">
+    </node>
+
+    <node
+        pkg="turtlesim"
+        exec="mimic"
+        name="mimic_turtle2"
+        output="screen">
+        <param name="target" value="/turtle1"/>
+        <remap from="/input" to="/turtle2/cmd_vel"/>
+    </node>
+
+    <node
+        pkg="turtlesim"
+        exec="mimic"
+        name="mimic_turtle3"
+        output="screen">
+        <param name="target" value="/turtle2"/>
+        <remap from="/input" to="/turtle3/cmd_vel"/>
+    </node>
+</launch>
+
