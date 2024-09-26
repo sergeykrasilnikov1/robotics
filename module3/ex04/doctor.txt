@@ -1,0 +1,71 @@
+
+   NETWORK CONFIGURATION
+inet         : 127.0.0.1
+inet4        : ['127.0.0.1']
+inet6        : ['::1']
+netmask      : 255.0.0.0
+device       : lo
+flags        : 73<RUNNING,UP,LOOPBACK>
+mtu          : 65536
+inet         : 192.168.1.104
+inet4        : ['192.168.1.104']
+ether        : c8:94:02:91:d3:37
+inet6        : ['fe80::5447:696b:7793:81f0%wlo1']
+netmask      : 255.255.255.0
+device       : wlo1
+flags        : 4163<RUNNING,BROADCAST,UP,MULTICAST>
+mtu          : 1500
+broadcast    : 192.168.1.255
+inet         : 192.168.49.1
+inet4        : ['192.168.49.1']
+ether        : 02:42:ef:3b:07:03
+netmask      : 255.255.255.0
+device       : br-154dd6c701c7
+flags        : 4099<BROADCAST,UP,MULTICAST>
+mtu          : 1500
+broadcast    : 192.168.49.255
+inet         : 172.18.0.1
+inet4        : ['172.18.0.1']
+ether        : 02:42:a0:00:64:8c
+inet6        : ['fe80::42:a0ff:fe00:648c%br-581d1757a3ec']
+netmask      : 255.255.0.0
+device       : br-581d1757a3ec
+flags        : 4163<RUNNING,BROADCAST,UP,MULTICAST>
+mtu          : 1500
+broadcast    : 172.18.255.255
+inet         : 172.17.0.1
+inet4        : ['172.17.0.1']
+ether        : 02:42:93:ce:78:2e
+netmask      : 255.255.0.0
+device       : docker0
+flags        : 4099<BROADCAST,UP,MULTICAST>
+mtu          : 1500
+broadcast    : 172.17.255.255
+ether        : 3e:83:c1:d9:a7:c3
+inet6        : ['fe80::3c83:c1ff:fed9:a7c3%veth38028a2']
+device       : veth38028a2
+flags        : 4163<RUNNING,BROADCAST,UP,MULTICAST>
+mtu          : 1500
+
+   PLATFORM INFORMATION
+system           : Linux
+platform info    : Linux-6.5.0-28-generic-x86_64-with-glibc2.35
+release          : 6.5.0-28-generic
+processor        : x86_64
+
+   QOS COMPATIBILITY LIST
+compatibility status    : No publisher/subscriber pairs found
+
+   RMW MIDDLEWARE
+middleware name    : rmw_fastrtps_cpp
+
+   ROS 2 INFORMATION
+distribution name      : humble
+distribution type      : ros2
+distribution status    : active
+release platforms      : {'rhel': ['8'], 'ubuntu': ['jammy']}
+
+   TOPIC LIST
+topic               : none
+publisher count     : 0
+subscriber count    : 0

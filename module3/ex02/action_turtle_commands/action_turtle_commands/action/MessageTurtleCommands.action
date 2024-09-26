@@ -1,0 +1,11 @@
+# Goal definition
+string command  # "forward", "turn_left", "turn_right"
+int32 s         # расстояние в метрах для команды движения
+int32 angle     # угол в градусах для команды поворота
+---
+# Result definition
+bool result     # результат выполнения команды
+---
+# Feedback
+int32 odom      # пройденное расстояние с момента начала команды
+
