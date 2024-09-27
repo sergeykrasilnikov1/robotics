@@ -24,7 +24,7 @@ class TurtleActionClient(Node):
     def goal_response_callback(self, future):
         goal_handle = future.result()
         if not goal_handle.accepted:
-            self.get_logger().info('Goal rejected :(')
+            self.get_logger().info('Goal error')
             return
 
         self.get_logger().info('Goal accepted :)')
@@ -45,14 +45,10 @@ def main(args=None):
     rclpy.init(args=args)
     action_client = TurtleActionClient()
 
-    # Программа движений: 2 метра вперед, поворот на 90 градусов направо, 1 метр вперед
     action_client.send_goal('forward', s=2)
-    #rclpy.spin_once(action_client)
 
-    # После первого действия можно запускать следующее
 
     action_client.send_goal('turn_right', angle=90)
-    #rclpy.spin_once(action_client)
 
     action_client.send_goal('forward', s=1)
     rclpy.spin(action_client)
