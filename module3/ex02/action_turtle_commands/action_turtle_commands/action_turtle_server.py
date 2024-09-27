@@ -47,7 +47,7 @@ class TurtleActionServer(Node):
             start_y = self.current_pose.y
             distance_travelled = 0.0
 
-            twist.linear.x = 1.0  # Скорость движения вперёд
+            twist.linear.x = 1.0 
             while distance_travelled < goal_handle.request.s:
                 self._cmd_vel_publisher.publish(twist)
                 rclpy.spin_once(self)
