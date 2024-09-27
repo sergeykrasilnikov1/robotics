@@ -65,10 +65,6 @@ class MoveToGoal(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    if len(sys.argv) != 4:
-        print("Usage: ros2 run move_to_goal move_to_goal x_goal y_goal theta_goal")
-        return
-
     x_goal = float(sys.argv[1])
     y_goal = float(sys.argv[2])
     theta_goal = float(sys.argv[3])
