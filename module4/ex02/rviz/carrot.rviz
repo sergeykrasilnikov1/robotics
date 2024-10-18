@@ -1,0 +1,10 @@
+Panels:
+  - Class: rviz_default_plugins/TF
+    Name: TF
+    Show Names: true
+    Frames:
+      World: world
+      Turtle1: turtle1
+      Turtle2: turtle2
+      Carrot: carrot
+
